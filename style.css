@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Raleway', sans-serif;
+}
+
+@media only screen and (max-width: 768) {
+    
+}
+
+
+
+section.main__page{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+.main__box--container{
+    height: 500px;
+    width: 300px;
+    background-color: rgb(12, 12, 77);
+    position: relative;
+}
+
+.main__box--container_header{
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.main__box--container_header p{
+    text-transform: uppercase;
+    
+}
+
+.main__box--container_header .menu__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 28px;
+    height: 28px;
+    background: rgb(232,93,93);
+    background: linear-gradient(90deg, rgba(232,93,93,1) 0%, rgba(224,45,45,1) 0%, rgba(255,104,104,1) 100%);
+    border-radius: 5px;
+}
+
+.main__box--container_header p{
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(54,54,54,1) 100%, rgba(0,0,0,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2em;
+    font-weight: 100;;
+    letter-spacing: 0.07em;
+}
+
+.menu__btn svg{
+    color: rgb(216, 201, 201);
+}
+
+.cards{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    border-radius: 25px 0 0 0;
+}
+
+.first__card{
+    background-color: rgb(60, 60, 231);
+    height: 430px;
+    z-index: 2;
+}
+
+.second__card{
+    background-color: rgb(34, 207, 219);
+    height: 380px;
+    z-index: 3;
+}
+
+.fourth__card{
+    background-color: white;
+    height: 330px;
+    z-index: 4;
+}
+
+@media only screen and (min-width: 769px) {
+    .main__box--container{
+        width: 400px;
+    }
+}
